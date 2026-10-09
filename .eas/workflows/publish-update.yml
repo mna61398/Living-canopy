@@ -1,0 +1,15 @@
+# Publishes an EAS Update to the "main" branch on every push to main.
+# Open the update from the project's page on expo.dev to preview it in Expo Go.
+name: Publish update
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  publish_update:
+    name: Publish update
+    type: update
+    params:
+      branch: main
+      message: ${{ github.commit_message }}

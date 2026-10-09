@@ -22,8 +22,21 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font"
     ],
-    "scheme": "livingcanopy"
+    "scheme": "livingcanopy",
+    "owner": "mna61398",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f42d0a79-ff0c-4c44-ac11-7331e44483a7"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f42d0a79-ff0c-4c44-ac11-7331e44483a7"
+      }
+    }
   }
 }

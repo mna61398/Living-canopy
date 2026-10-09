@@ -16,6 +16,20 @@ npx expo start
 
 Scan the QR code with Expo Go (Android) or the Camera app (iOS).
 
+## Preview on your phone without a computer (EAS Update)
+
+The app is linked to EAS project `f42d0a79-ff0c-4c44-ac11-7331e44483a7` (owner `mna61398`) and uses
+`runtimeVersion: { policy: "sdkVersion" }`, which resolves to `exposdk:57.0.0`, the runtime Expo Go loads.
+
+Every push to `main` runs the EAS Workflow in `.eas/workflows/publish-update.yml`, which publishes an update to the
+`main` branch. To open it:
+
+1. Install Expo Go (it must support SDK 57) and sign in as `mna61398`.
+2. Open the project on expo.dev → **Updates**, pick the latest update on branch `main` and scan its **Preview** QR
+   code, or open it from the **Projects** list inside Expo Go.
+
+The workflow only runs once the GitHub repo is connected to the EAS project (expo.dev → project → **GitHub**).
+
 ## Screens
 
 | Route | Screen |
